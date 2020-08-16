@@ -1,4 +1,4 @@
-# SNS 정보 연동 구현 👻
+# SNS 정보 연동 구현 🤞
 
 ## Description.
 
@@ -11,4 +11,4 @@
 React, JQuery, Css
 
 ## Link.
-[https://yo-onhye.github.io/04.project-collect-sns](https://yo-onhye.github.io/04.project-collect-sns)
+[https://yo-onhye.github.io/06.project-collect-sns](https://yo-onhye.github.io/06.project-collect-sns)
