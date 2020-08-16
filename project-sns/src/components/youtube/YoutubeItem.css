@@ -1,0 +1,142 @@
+/* List Item */
+.myYoutubeItem {
+	overflow: hidden;
+	display: block;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	background: #fff;
+	color: #2f332f;
+	font-size: 12px;
+}
+.myYoutubeItem a {
+	display: block;
+	position: relative;
+	padding: 20px 10px;
+}
+.myYoutubeItem a:before,
+.myYoutubeItem a:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	-webkit-transition: 0.4s ease;
+	transition: 0.4s ease;
+	z-index: 1;
+}
+.myYoutubeItem a:hover:before,
+.myYoutubeItem a:focus:before {
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: transform 0.3s ease, opacity 0.5s ease;
+	transition: transform 0.3s ease, opacity 0.5s ease;
+}
+.myYoutubeItem a:after {
+	content: "영상 바로가기";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 15px;
+	opacity: 0;
+	z-index: 2;
+}
+.myYoutubeItem a:hover:after,
+.myYoutubeItem a:focus:after {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+
+.myYoutubeItem .myYoutubeTop {
+	overflow: hidden;
+}
+.myYoutubeItem .myYoutubeProfile {
+	overflow: hidden;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	vertical-align: top;
+}
+.myYoutubeItem .myYoutubeProfile img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.myYoutubeItem .myYoutubeOwner {
+	display: inline-block;
+	font-family: "S-CoreDream-5Medium";
+	font-size: 15px;
+	line-height: 30px;
+	vertical-align: top;
+}
+.myYoutubeItem .myYoutubeCont {
+	margin-top: 15px;
+}
+.myYoutubeItem .myYoutubeMedia {
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 75%;
+	border-radius: 10px;
+	font-size: 0;
+	vertical-align: top;
+}
+.myYoutubeItem .myYoutubeMedia:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.03);
+	z-index: 3;
+}
+.myYoutubeItem .myYoutubeMedia img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.myYoutubeItem .myYoutubeTitle {
+	font-family: "S-CoreDream-5Medium";
+	color: #2f332f;
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.myYoutubeItem .myYoutubeDetail {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	display: -webkit-box;
+	max-width: 100%;
+	margin-top: 15px;
+	color: #666;
+	font-size: 12px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
